@@ -20,6 +20,12 @@ body {
     grid-template-rows: auto 1fr;
 }
 
+.home-logo {
+    scale: 9%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .page-header {
     position: sticky;
     top: 0;
@@ -51,6 +57,14 @@ body {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.6fr 1.8fr 0.9fr 0.7fr;
+    grid-template-rows: 0.1fr 2.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        '. . . .'
+        '. . . .';
 }
 
 .avatar {
