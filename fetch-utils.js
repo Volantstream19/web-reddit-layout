@@ -33,7 +33,7 @@ export async function createPost(post) {
 }
 
 export async function getPosts() {
-    return await client.from('posts').select('*').order('created_at');
+    return await client.from('posts').select('*').order('created_at', { ascending: false });
 }
 
 export async function getPost(id) {

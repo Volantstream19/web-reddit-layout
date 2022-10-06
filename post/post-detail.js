@@ -50,6 +50,13 @@ addCommentForm.addEventListener('submit', async (e) => {
     error = response.error;
     const comment = response.data;
 
+    if (error) {
+        displayError();
+    } else {
+        addCommentForm.reset();
+        post.comments.unshift(comment);
+        displayComments();
+    }
     return;
 });
 
