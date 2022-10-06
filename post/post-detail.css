@@ -20,4 +20,5 @@
     background: var(--header-background);
     padding: 20px 25px;
     border-bottom: 1px solid var(--placeholder-color);
+    height: 15%;
 }
