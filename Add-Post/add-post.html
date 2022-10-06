@@ -12,7 +12,7 @@
 
         <!-- js -->
         <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-        <script type="module" src="add-post.js"></script>
+        <script type="module" src="/Add-Post/add-post.js"></script>
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,21 +39,20 @@
             <form id="post-form">
                 <label>
                     <div>Title</div>
-                    <input name="name" required placeholder="Title" />
+                    <input name="title" required placeholder="Title" />
                 </label>
 
                 <label>
                     <div>Description</div>
-                    <textarea name="Description" required placeholder="Text(optional)"></textarea>
+                    <textarea name="bio" placeholder="Text(optional)"></textarea>
                 </label>
 
                 <label>
                     <div>Image</div>
                     <input
                         id="image-input"
-                        name="image"
+                        name="image_url"
                         type="file"
-                        required
                         placeholder="upload an image..."
                     />
                 </label>
