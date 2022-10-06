@@ -18,8 +18,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
-    background: rgb(202, 203, 205);
-    background: linear-gradient(153deg, rgba(202, 203, 205, 1) 1%, rgba(191, 154, 154, 1) 100%);
+    background-color: grey;
 }
 
 .page-header {
