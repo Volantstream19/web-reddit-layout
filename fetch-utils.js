@@ -35,3 +35,16 @@ export async function createPost(post) {
 export async function getPosts() {
     return await client.from('posts').select('*').order('created_at');
 }
+
+export async function getPost(id) {
+    return await client
+        .from('posts')
+        .select(`*,comments (*)`)
+        .eq('id', id)
+        .order('created_at', { foreignTable: 'comments', ascending: false })
+        .single();
+}
+
+export async function createComment(comment) {
+    return await client.from('comments').insert(comment).single();
+}

@@ -1,0 +1,23 @@
+.post-summary {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 30px 60px;
+    grid-template-areas:
+        'title'
+        'bio';
+    row-gap: 5px;
+    column-gap: 20px;
+    background-color: aliceblue;
+    box-shadow: var(--box-shadow);
+}
+
+#post-name {
+    grid-area: title;
+    margin: 0;
+    align-self: center;
+}
+#comment-list li {
+    background: var(--header-background);
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--placeholder-color);
+}
