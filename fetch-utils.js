@@ -58,7 +58,7 @@ export async function uploadImage(bucketName, imagePath, imageFile) {
     });
 
     if (response.error) {
-        console.log(response.error);
+        // console.log(response.error);
         return null;
     }
 

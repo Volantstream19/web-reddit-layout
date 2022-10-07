@@ -7,10 +7,13 @@ export function renderPost(post) {
     const h2 = document.createElement('h2');
     h2.textContent = post.title;
 
+    const img = document.createElement('img');
+    img.src = post.image_url;
+
     const p = document.createElement('p');
     p.textContent = post.bio;
 
-    a.append(h2, p);
+    a.append(img, h2, p);
     li.append(a);
     return li;
 }

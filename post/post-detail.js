@@ -5,6 +5,7 @@ import { renderComment } from '../render-utils.js';
 const errorDisplay = document.getElementById('error-display');
 const postTitle = document.getElementById('post-title');
 const postBio = document.getElementById('post-bio');
+const postImage = document.getElementById('post-image');
 const commentList = document.getElementById('comment-list');
 const addCommentForm = document.getElementById('add-comment-form');
 
@@ -63,6 +64,7 @@ addCommentForm.addEventListener('submit', async (e) => {
 function displayPost() {
     postTitle.textContent = post.title;
     postBio.textContent = post.bio;
+    postImage.src = post.image_url;
 }
 
 function displayComments() {
